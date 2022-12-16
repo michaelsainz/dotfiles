@@ -1,0 +1,26 @@
+[http]
+	sslVerify = false
+[credential]
+	helper = osxkeychain
+[user]
+	name = Michael Sainz
+	email = michaelsainz@github.com
+	signingkey = E639638991E11E80
+[commit]
+	gpgsign = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[gpg]
+	#program = gpg
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
+[github]
+	user = michaelsainz
+[core]
+	excludesfile = /Users/mattyass/.gitignore_global
+	editor = code --wait

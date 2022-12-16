@@ -1,0 +1,40 @@
+{
+	"Meeting Notes Snippet": {
+		"prefix": ".mn",
+		"body": [
+			"# Attendees",
+			"",
+			"| Handles | Title | Company |",
+			"| ------- | ----- | ------- |",
+			"| @michaelsainz | Solution Architect | GitHub |",
+			"",
+			"# Notes",
+			"",
+			"- ",
+			"",
+			"# Action Items"
+		]
+	},
+	"Daily Log Snippet": {
+		"prefix": ".daily",
+		"body": [
+			"## Daily Log - ${CURRENT_MONTH}/${CURRENT_DATE}/${CURRENT_YEAR} (${CURRENT_DAY_NAME})",
+			"- "
+		]
+	},
+	"Weekly Timesheet Description": {
+		"prefix": ".ts",
+		"body": [
+			"*Monday*",
+			"",
+			"*Tuesday*",
+			"",
+			"*Wednesday*",
+			"",
+			"*Thursday*",
+			"",
+			"*Friday*",
+			""
+		]
+	}
+}

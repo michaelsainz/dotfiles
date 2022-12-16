@@ -1,0 +1,46 @@
+{
+    "editor.fontFamily": "'FiraCode Nerd Font', 'Cascadia Code', 'Source Code Pro', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 13,
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.fontLigatures": true,
+    "editor.copyWithSyntaxHighlighting": false,
+    "editor.tabSize": 2,
+    "editor.renderControlCharacters": true,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+
+    "files.defaultLanguage": "markdown",
+
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.defaultCloneDirectory": "~/Repos",
+    "git.enableCommitSigning": true,
+    "git.ignoreMissingGitWarning": true,
+
+    "liveshare.authenticationProvider": "GitHub",
+
+    "[markdown]": {
+        "editor.quickSuggestions": false,
+        "editor.tabSize": 2
+    },
+
+    "terminal.integrated.fontFamily": "Cascadia Code",
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.shell.osx": "/usr/local/bin/bash",
+    "terminal.integrated.shellArgs.osx": [],
+    "terminal.integrated.inheritEnv": true,
+
+    "workbench.colorTheme": "GitHub Light Default",
+    "workbench.colorCustomizations": {
+        "terminal.background":"#1D2021",
+        "terminal.foreground":"#f2efeb",
+        "terminal.ansiWhite":"#ffffff"
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "window.zoomLevel": 1
+}
