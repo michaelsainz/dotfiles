@@ -12,7 +12,7 @@
 #   1.  ENVIRONMENT CONFIGURATION
 #   -------------------------------
 
-export $(xargs <~/.env)
+set -o allexport; source ~/.env; set +o allexport
 
 #   Set Paths
 #   ------------------------------------------------------------
