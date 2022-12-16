@@ -27,3 +27,6 @@ export EDITOR=/usr/bin/nano
 [[ -f ~/.bash/starship.zsh ]] && source ~/.bash/starship.zsh
 [[ -f ~/.bash/nvm.zsh ]] && source ~/.bash/nvm.zsh
 [[ -f ~/.env ]] && source ~/.env
+
+#   Starship Prompt
+eval "$(starship init bash)"
