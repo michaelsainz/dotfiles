@@ -58,6 +58,16 @@ CloneDotfiles () {
   fi
 }
 
+ResetEnv () {
+  [[ -f ~/.config ]] && rm -rf ~/.config
+  [[ -f ~/.bashrc ]] && rm -rf ~/.bashrc
+  [[ -f ~/.zsrc ]] && rm -rf ~/.zshrc
+  [[ -f ~/.zsh ]] && rm -rf ~/.zsh
+  [[ -f ~/.bash ]] && rm -rf ~/.bash
+  [[ -f ~/.gitconfig ]] && rm -rf ~/.gitconfig
+  [[ -f ~/.config/starship.toml ]] && rm -rf ~/.config/starship.toml
+}
+
 DotfilesConfig () {
   if [ -d "$HOME/repos/dotfiles" ]
   then
@@ -105,6 +115,10 @@ while true; do
       ;;
     -d|--dotfiles)
       DotfilesConfig
+      shift
+      ;;
+    -r|--reset)
+      ResetEnv
       shift
       ;;
     *)
