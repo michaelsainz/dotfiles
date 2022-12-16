@@ -22,10 +22,10 @@ export PATH="/usr/local/git/bin:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/
 #   ------------------------------------------------------------
 export EDITOR=/usr/bin/nano
 
-[[ -f ~/.bash/aliases.zsh ]] && source ~/.bash/aliases.zsh
-[[ -f ~/.bash/functions.zsh ]] && source ~/.bash/functions.zsh
-[[ -f ~/.bash/starship.zsh ]] && source ~/.bash/starship.zsh
-[[ -f ~/.bash/nvm.zsh ]] && source ~/.bash/nvm.zsh
+[[ -f ~/.config/aliases.sh ]] && source ~/.config/aliases.sh
+[[ -f ~/.config/functions.sh ]] && source ~/.config/functions.sh
+[[ -f ~/.config/starship.sh ]] && source ~/.config/starship.sh
+[[ -f ~/.config/nvm.sh ]] && source ~/.config/nvm.sh
 [[ -f ~/.env ]] && source ~/.env
 
 #   Starship Prompt

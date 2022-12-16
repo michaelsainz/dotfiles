@@ -62,14 +62,23 @@ DotfilesConfig () {
   if [ -d "$HOME/repos/dotfiles" ]
   then
     echo "Linking dotfiles"
-    mkdir $HOME/.zsh
     mkdir $HOME/.config
-    ln -s $HOME/repos/dotfiles/.zshrc $HOME/.zshrc
-    ln -s $HOME/repos/dotfiles/.zsh/aliases.zsh $HOME/.zsh/aliases.zsh
-    ln -s $HOME/repos/dotfiles/.zsh/nvm.zsh $HOME/.zsh/nvm.zsh
-    ln -s $HOME/repos/dotfiles/.zsh/starship.zsh $HOME/.zsh/starship.zsh
-    ln -s $HOME/repos/dotfiles/.zsh/functions.zsh $HOME/.zsh/functions.zsh
-    ln -s $HOME/repos/dotfiles/.bashrc $HOME/.bashrc
+
+    if [ "$SHELL" == "/bin/bash" ]
+    then
+      ln -s $HOME/repos/dotfiles/.bashrc $HOME/.bashrc
+      ln -s $HOME/repos/dotfiles/.config/aliases.sh $HOME/.config/aliases.sh
+      ln -s $HOME/repos/dotfiles/.config/nvm.sh $HOME/.config/nvm.sh
+      ln -s $HOME/repos/dotfiles/.config/starship.sh $HOME/.config/starship.sh
+    fi
+    if [ "$SHELL" == "/bin/zsh" ]
+    then
+      ln -s $HOME/repos/dotfiles/.zshrc $HOME/.zshrc
+      ln -s $HOME/repos/dotfiles/.config/aliases.sh $HOME/.config/aliases.sh
+      ln -s $HOME/repos/dotfiles/.config/nvm.sh $HOME/.config/nvm.sh
+      ln -s $HOME/repos/dotfiles/.config/starship.sh $HOME/.config/starship.sh
+      ln -s $HOME/repos/dotfiles/.config/functions.sh $HOME/.config/functions.sh
+    fi
     ln -s $HOME/repos/dotfiles/.gitconfig $HOME/.gitconfig
     ln -s $HOME/repos/dotfiles/.config/starship.toml $HOME/.config/starship.toml
   fi
