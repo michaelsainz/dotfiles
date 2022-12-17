@@ -12,7 +12,9 @@
 #   1.  ENVIRONMENT CONFIGURATION
 #   -------------------------------
 
-set -o allexport; source ~/.env; set +o allexport
+if [ -f ~/.env ]; then
+  set -o allexport; source ~/.env; set +o allexport
+fi
 
 #   Set Paths
 #   ------------------------------------------------------------
@@ -28,10 +30,10 @@ export GPG_TTY=$(tty)
 #   SSH Forwarding for Secretive Agent
 export SSH_AUTH_SOCK=$HOME/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
 
-[[ -f ~/.zsh/aliases.zsh ]] && source ~/.zsh/aliases.zsh
-[[ -f ~/.zsh/functions.zsh ]] && source ~/.zsh/functions.zsh
-[[ -f ~/.zsh/starship.zsh ]] && source ~/.zsh/starship.zsh
-[[ -f ~/.zsh/nvm.zsh ]] && source ~/.zsh/nvm.zsh
+[[ -f ~/.config/aliases.sh ]] && source ~/.config/aliases.sh
+[[ -f ~/.config/functions.sh ]] && source ~/.config/functions.sh
+[[ -f ~/.config/starship.sh ]] && source ~/.config/starship.sh
+[[ -f ~/.config/nvm.sh ]] && source ~/.config/nvm.sh
 [[ -f ~/.env ]] && source ~/.env
 
 #   Starship Prompt

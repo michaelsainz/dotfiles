@@ -12,7 +12,9 @@
 #   1.  ENVIRONMENT CONFIGURATION
 #   -------------------------------
 
-set -o allexport; source ~/.env; set +o allexport
+if [ -f ~/.env ]; then
+    set -o allexport; source ~/.env; set +o allexport
+fi
 
 #   Set Paths
 #   ------------------------------------------------------------
@@ -26,7 +28,6 @@ export EDITOR=/usr/bin/nano
 [[ -f ~/.config/functions.sh ]] && source ~/.config/functions.sh
 [[ -f ~/.config/starship.sh ]] && source ~/.config/starship.sh
 [[ -f ~/.config/nvm.sh ]] && source ~/.config/nvm.sh
-[[ -f ~/.env ]] && source ~/.env
 
 #   Starship Prompt
 eval "$(starship init bash)"
