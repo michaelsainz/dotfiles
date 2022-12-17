@@ -34,7 +34,6 @@ export SSH_AUTH_SOCK=$HOME/Library/Containers/com.maxgoedjen.Secretive.SecretAge
 [[ -f ~/.config/functions.sh ]] && source ~/.config/functions.sh
 [[ -f ~/.config/starship.sh ]] && source ~/.config/starship.sh
 [[ -f ~/.config/nvm.sh ]] && source ~/.config/nvm.sh
-[[ -f ~/.env ]] && source ~/.env
 
 #   Starship Prompt
 eval "$(starship init zsh)"
