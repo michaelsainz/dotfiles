@@ -83,7 +83,7 @@ DotfilesConfig () {
       ln -s $HOME/repos/dotfiles/.zshrc $HOME/.zshrc
       ln -s $HOME/repos/dotfiles/.config/aliases.sh $HOME/.config/aliases.sh
       ln -s $HOME/repos/dotfiles/.config/nvm.sh $HOME/.config/nvm.sh
-      ln -s $HOME/repos/dotfiles/.config/starship.sh $HOME/.config/starship.sh
+      ln -s $HOME/repos/dotfiles/.config/starship.zsh $HOME/.config/starship.zsh
       ln -s $HOME/repos/dotfiles/.config/functions.sh $HOME/.config/functions.sh
     fi
     ln -s $HOME/repos/dotfiles/.gitconfig $HOME/.gitconfig
