@@ -1,5 +1,3 @@
-#!/usr/bin/env sh
-
 CodeSpacesDotfilesConfig () {
   echo "Dotsourcing config files"
   rm ~/.bashrc
