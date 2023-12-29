@@ -18,7 +18,9 @@ fi
 
 #   Set Paths
 #   ------------------------------------------------------------
-export PATH=":$PATH:/usr/local/git/bin:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/go/bin:/opt/homebrew/bin:/Applications/Docker.app/Contents/Resources/bin/"
+export PATH="/usr/local/git/bin:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/go/bin:/Applications/Docker.app/Contents/Resources/bin/:$PATH"
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
+export PATH="$(brew --prefix)/opt/python@3.12/libexec/bin:$PATH"
 
 #   Set Default Text Editor
 #   ------------------------------------------------------------
