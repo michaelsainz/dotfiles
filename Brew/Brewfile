@@ -18,6 +18,7 @@ brew "gh"
 brew "terraform"
 brew "starship"
 brew "gnupg"
+brew "pinentry-mac"
 
 # Casks
 cask "lastpass"
