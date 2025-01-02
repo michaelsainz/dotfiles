@@ -43,8 +43,8 @@ export SSH_AUTH_SOCK=$HOME/Library/Containers/com.maxgoedjen.Secretive.SecretAge
 
 #   ESP-IDF export script
 #   ------------------------------------------------------------
-export IDF_PATH=$HOME/esp/esp-idf
-alias get_idf='. $HOME/esp/esp-idf/export.sh'
+#export IDF_PATH=$HOME/esp/esp-idf
+#alias get_idf='. $HOME/esp/esp-idf/export.sh'
 
 #   Starship Prompt
 #   ------------------------------------------------------------
