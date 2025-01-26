@@ -68,6 +68,7 @@ DotfilesConfig () {
   then
     echo "Linking dotfiles"
     mkdir $HOME/.config
+    mkdir $HOME/.config/ghostty
 
     if [ "$SHELL" == "/bin/bash" ]
     then
@@ -75,6 +76,8 @@ DotfilesConfig () {
       ln -s $HOME/repos/dotfiles/.config/aliases.sh $HOME/.config/aliases.sh
       ln -s $HOME/repos/dotfiles/.config/nvm.sh $HOME/.config/nvm.sh
       ln -s $HOME/repos/dotfiles/.config/starship.sh $HOME/.config/starship.sh
+      ln -s $HOME/repos/dotfiles/.config/functions.sh $HOME/.config/functions.sh
+      ln -s $HOME/repos/dotfiles/.config/ghostty/config $HOME/.config/ghostty/config
     fi
     if [ "$SHELL" == "/bin/zsh" ]
     then
@@ -83,6 +86,8 @@ DotfilesConfig () {
       ln -s $HOME/repos/dotfiles/.config/nvm.sh $HOME/.config/nvm.sh
       ln -s $HOME/repos/dotfiles/.config/starship.zsh $HOME/.config/starship.zsh
       ln -s $HOME/repos/dotfiles/.config/functions.sh $HOME/.config/functions.sh
+      ln -s $HOME/repos/dotfiles/.config/ghostty/config $HOME/.config/ghostty/config
+
     fi
     ln -s $HOME/repos/dotfiles/.gitconfig $HOME/.gitconfig
     ln -s $HOME/repos/dotfiles/.config/starship.toml $HOME/.config/starship.toml
