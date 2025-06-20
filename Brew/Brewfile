@@ -1,6 +1,4 @@
 # Taps
-tap "homebrew/cask"
-tap "homebrew/cask-fonts"
 tap "buo/cask-upgrade"
 
 # Formulae
@@ -43,3 +41,6 @@ cask "microsoft-teams"
 cask "microsoft-office"
 cask "font-monaspace"
 cask "ansible"
+cask "bitwarden"
+cask "Firefox"
+cask "ChatGPT"
