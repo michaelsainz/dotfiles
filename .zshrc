@@ -23,6 +23,10 @@ export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
 export PATH="$(brew --prefix)/opt/python@3.13/libexec/bin:$PATH"
 export PATH="/Users/michaelsainz/Library/Python/3.13/bin:$PATH"
 
+#   Homelab Variables
+#   ------------------------------------------------------------
+export HOMELAB_SSH_KEY="michaelsainz_titan"
+
 #   Set Default Text Editor
 #   ------------------------------------------------------------
 export EDITOR=/usr/local/bin/code
@@ -51,3 +55,4 @@ alias get_idf='. $HOME/esp/esp-idf/export.sh'
 #   ------------------------------------------------------------
 [[ -f ~/.zsh/starship.zsh ]] && source ~/.zsh/starship.zsh
 eval "$(starship init zsh)"
+export PATH="$HOME/.local/bin:$PATH"

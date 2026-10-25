@@ -24,3 +24,9 @@
 [core]
 	excludesfile = /Users/mattyass/.gitignore_global
 	editor = code --wait
+[credential "https://github.com"]
+	helper = 
+	helper = !/Users/michaelsainz/Library/Caches/copilot-desktop-gh-2.96.0/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/Users/michaelsainz/Library/Caches/copilot-desktop-gh-2.96.0/gh auth git-credential

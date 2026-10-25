@@ -17,3 +17,7 @@ alias f='open -a Finder ./'                 # f:            Opens current direct
 alias ~="cd ~"                              # ~:            Go Home
 alias c='clear'                             # c:            Clear terminal display
 alias get_idf='. $HOME/esp/esp-idf/export.sh'
+
+if [ -n "${GHOSTTY_BIN_DIR:-}" ]; then
+  alias ghostty="$GHOSTTY_BIN_DIR/ghostty"
+fi

@@ -2,6 +2,7 @@
 tap "buo/cask-upgrade"
 
 # Formulae
+brew "azure-cli"
 brew "bash"
 brew "mas"
 brew "git"
@@ -36,7 +37,7 @@ cask "mqtt-explorer"
 cask "font-cascadia-code-pl"
 cask "font-hack-nerd-font"
 cask "obsidian"
-cask "docker"
+cask "docker-desktop"
 cask "microsoft-teams"
 cask "microsoft-office"
 cask "font-monaspace"
