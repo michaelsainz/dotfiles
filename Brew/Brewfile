@@ -16,6 +16,8 @@ brew "gnupg"
 brew "pinentry-mac"
 
 # Casks
+cask "chatgpt"
+cask "github-copilot-app"
 cask "utm"
 cask "microsoft-edge"
 cask "github"
@@ -39,5 +41,4 @@ cask "microsoft-office"
 cask "font-monaspace"
 cask "ansible"
 cask "bitwarden"
-cask "firefox"
-cask "chatgpt"
+
